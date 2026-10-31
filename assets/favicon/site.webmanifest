@@ -1,0 +1,24 @@
+{
+  "name": "SCA GMS — نظام إدارة النقل والوقود",
+  "short_name": "SCA GMS",
+  "description": "نظام إدارة النقل والوقود لهيئة قناة السويس — نسخة مكتبية تعمل دون إنترنت.",
+  "start_url": "../../index.html",
+  "scope": "../../",
+  "display": "standalone",
+  "background_color": "#04131f",
+  "theme_color": "#04131f",
+  "icons": [
+    {
+      "src": "web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

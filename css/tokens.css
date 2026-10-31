@@ -1,0 +1,188 @@
+/* =========================================================
+   SCA GMS landing — design tokens and global reset
+   ========================================================= */
+
+/* =========================================================
+   SCA GMS — landing page
+   A canal-control-room aesthetic: deep water, brass light,
+   paper reports, and one continuous current of data.
+   ========================================================= */
+
+:root {
+  --ink-950: #04131f;
+  --ink-900: #061c2b;
+  --ink-850: #082335;
+  --ink-800: #0a2a43;
+  --ink-700: #0e3553;
+  --teal-900: #07333b;
+  --teal-700: #0b5560;
+  --teal-600: #0e6b76;
+  --teal-500: #12808d;
+  --teal-300: #6fd9df;
+  --teal-200: #b4e2e6;
+  --gold: #d8b44a;
+  --gold-deep: #9b7421;
+  --gold-soft: #f1d98b;
+  --sand: #f4f0e5;
+  --sand-2: #ebe5d6;
+  --sand-3: #ded5c2;
+  --clay: #c96f4a;
+  --green: #5a9e6f;
+  --red: #d96b5f;
+  --white: #fffdf7;
+  --text-on-dark: #f4f0e5;
+  --text-muted-dark: #9fb8c6;
+  --text-on-light: #0a2a43;
+  --text-muted-light: #536b80;
+  --border-dark: rgba(180, 226, 230, 0.14);
+  --border-dark-strong: rgba(180, 226, 230, 0.24);
+  --border-light: rgba(10, 42, 67, 0.14);
+  --font-display: "Reem Kufi", "Segoe UI", Tahoma, sans-serif;
+  --font-body: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+  --gutter: clamp(20px, 5vw, 64px);
+  --container: min(1320px, calc(100vw - (2 * var(--gutter))));
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-soft: cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--ink-950);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  background: var(--ink-900);
+  color: var(--text-on-dark);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--ink-950);
+}
+
+img,
+svg,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+figure {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+code {
+  font-family: var(--font-mono);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+section[id] {
+  scroll-margin-top: 84px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 4px;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  direction: ltr;
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+}
+
+.skip-link {
+  position: fixed;
+  inset-block-start: 12px;
+  inset-inline-start: 50%;
+  z-index: 999;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: var(--ink-950);
+  font-size: 12px;
+  font-weight: 700;
+  transform: translate(-50%, -180%);
+  transition: transform 0.3s var(--ease);
+}
+
+.skip-link:focus {
+  transform: translate(-50%, 0);
+}
+
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  pointer-events: none;
+  opacity: 0.055;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+  mix-blend-mode: soft-light;
+}
+
+.scroll-progress {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline: 0;
+  z-index: 1000;
+  height: 2px;
+  pointer-events: none;
+  background: transparent;
+}
+
+.scroll-progress span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--teal-300));
+  transform: scaleX(0);
+  transform-origin: right center;
+}

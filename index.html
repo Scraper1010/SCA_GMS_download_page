@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SCA GMS — نظام إدارة النقل والوقود | هيئة قناة السويس</title>
+  <meta name="description" content="نظام إدارة النقل والوقود لقسم نقل بورتوفيق. سيارات، سائقون، كروت ذكية، تفويلات، أرصدة وتقارير — في نسخة مكتبية تُثبَّت على ويندوز وتعمل دون إنترنت." />
+  <meta name="theme-color" content="#04131f" />
+  <meta property="og:title" content="SCA GMS — الأسطول كله في مجرى واحد" />
+  <meta property="og:description" content="نظام إدارة النقل والوقود لهيئة قناة السويس. نسخة مكتبية محلية تُثبَّت على ويندوز وتعمل دون إنترنت." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero-poster-light.jpg" />
+  <meta property="og:image:width" content="1672" />
+  <meta property="og:image:height" content="941" />
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png" />
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Reem+Kufi:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/mockup.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="theme-light">
+  <a class="skip-link" href="#main">تجاوز إلى المحتوى</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="SCA GMS — العودة إلى البداية">
+        <img class="brand-mark" src="assets/favicon/favicon-96x96.png" alt="" width="46" height="46" />
+        <span class="brand-text">
+          <strong>SCA GMS</strong>
+          <span>نقل بورتوفيق</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="التنقل الرئيسي">
+        <a href="#control">النظام</a>
+        <a href="#offline">النسخة المكتبية</a>
+        <a href="#trust">الأمان</a>
+        <a href="#faq">الأسئلة</a>
+      </nav>
+
+      <div class="nav-actions">
+        <span class="version-chip"><i aria-hidden="true"></i> <span data-version>v0.0.1</span></span>
+        <a class="btn btn-small btn-gold" href="download/SCA_GMS_Setup_0.0.1.exe" download data-download>تحميل</a>
+        <button class="menu-toggle" type="button" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="فتح القائمة">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <nav aria-label="التنقل للجوال">
+        <a href="#control">النظام</a>
+        <a href="#offline">النسخة المكتبية</a>
+        <a href="#trust">الأمان</a>
+        <a href="#faq">الأسئلة</a>
+      </nav>
+      <a class="btn btn-gold" href="download/SCA_GMS_Setup_0.0.1.exe" download data-download>تحميل نسخة ويندوز</a>
+      <p>Windows 10/11 · 64-bit<br /><span>مثبّت ويندوز — تنزيل مباشر.</span></p>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-bg">
+        <img
+          src="assets/hero-poster-light.jpg"
+          alt="ناقلة حاويات تعبر قناة السويس في الساعة الذهبية"
+          width="1672"
+          height="941"
+          fetchpriority="high"
+          decoding="async"
+        />
+      </div>
+      <div class="hero-glow" id="heroGlow" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-kicker"><span class="kicker-line" aria-hidden="true"></span> هيئة قناة السويس · إدارة الخدمات</p>
+          <h1 class="hero-title">
+            <span class="title-line"><span>الأسطول كله</span></span>
+            <span class="title-line title-line-gold"><span>في مجرى واحد.</span></span>
+          </h1>
+          <p class="hero-lead">
+            سيارات، سائقون، كروت ذكية، تفويلات وتقارير — كلها تجري في نظام واحد،
+            على جهازك، وبلا حاجة إلى إنترنت.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-large" href="download/SCA_GMS_Setup_0.0.1.exe" download data-download>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                <path d="M3 4.7 10.6 3.6v7.2H3V4.7Zm8.6-1.2L21.7 2v8.8H11.6V3.5ZM3 12h7.6v7.2L3 18.1V12Zm8.6 0h10.1v8.8l-10.1-1.3V12Z" />
+              </svg>
+              <span>حمّل نسخة ويندوز</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5m6-6-6 6 6 6" />
+              </svg>
+            </a>
+            <a class="text-link" href="#control">
+              <span>اكتشف النظام</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14m6-6-6 6-6-6" />
+              </svg>
+            </a>
+          </div>
+          <ul class="hero-meta" aria-label="مزايا النسخة">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6" /></svg>
+              مثبّت رسمي
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6" /></svg>
+              يعمل دون إنترنت
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6" /></svg>
+              بياناتك على جهازك
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <div class="hero-facts" aria-label="وحدات النظام">
+          <span>سيارات</span><i aria-hidden="true"></i>
+          <span>سائقون</span><i aria-hidden="true"></i>
+          <span>كروت</span><i aria-hidden="true"></i>
+          <span>تفويلات</span><i aria-hidden="true"></i>
+          <span>تقارير</span>
+        </div>
+        <a class="scroll-cue" href="#control" aria-label="انتقل إلى النظام">
+          <span class="mono">SCROLL</span>
+          <i aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="section control-section" id="control">
+      <div class="control-layout">
+        <div class="control-copy reveal">
+          <p class="section-label">غرفة التحكم</p>
+          <h2>كل ما يحدث،<br /><span class="title-accent">أمامك.</span></h2>
+          <p class="section-lead">
+            شاشة واحدة تجمع الأسطول والوقود والكروت والتقارير. هذه هي واجهة
+            SCA GMS كما تظهر عند التشغيل — جرّبها مباشرة من الشاشة.
+          </p>
+
+          <ul class="control-points">
+            <li>
+              <span class="control-point-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1.5" /><rect x="14" y="3" width="7" height="5" rx="1.5" /><rect x="14" y="12" width="7" height="9" rx="1.5" /><rect x="3" y="16" width="7" height="5" rx="1.5" /></svg>
+              </span>
+              <span><strong>لوحة متابعة واحدة</strong><small>الأسطول والأرصدة والتنبيهات والتقارير، بلا تنقّل بين نوافذ.</small></span>
+            </li>
+            <li>
+              <span class="control-point-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21V5a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v16" /><path d="M4 21h13M8 8h5" /><path d="M15 10h2a2 2 0 0 1 2 2v5a2 2 0 0 0 4 0V9l-2-2" /></svg>
+              </span>
+              <span><strong>أرقام تُقرأ بسرعة</strong><small>رصيد كل نوع وقود وحساب، مع سجل الشحن والاستهلاك.</small></span>
+            </li>
+            <li>
+              <span class="control-point-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" /><path d="M14 2v6h6M8 13h8M8 17h5" /></svg>
+              </span>
+              <span><strong>تقارير جاهزة</strong><small>كشوف النسبة والاستهلاك السنوي تُصدَّر وتُطبع من نفس الشاشة.</small></span>
+            </li>
+          </ul>
+
+          <div class="control-actions">
+            <a class="btn btn-primary" href="download/SCA_GMS_Setup_0.0.1.exe" download data-download>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                <path d="M3 4.7 10.6 3.6v7.2H3V4.7Zm8.6-1.2L21.7 2v8.8H11.6V3.5ZM3 12h7.6v7.2L3 18.1V12Zm8.6 0h10.1v8.8l-10.1-1.3V12Z" />
+              </svg>
+              <span>حمّل نسخة ويندوز</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5m6-6-6 6 6 6" />
+              </svg>
+            </a>
+            <a class="text-link" href="#offline">
+              <span>كيف تعمل دون إنترنت</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14m6-6-6 6-6-6" />
+              </svg>
+            </a>
+          </div>
+
+          <p class="control-meta">
+            <span class="mono" data-version>v0.0.1</span><i aria-hidden="true"></i>
+            <span dir="ltr">Windows 10/11</span><i aria-hidden="true"></i>
+            <span dir="ltr">64-bit</span>
+          </p>
+        </div>
+
+        <div class="control-visual reveal" style="--delay: 140ms">
+          <figure class="screen-scene">
+            <span class="screen-halo" aria-hidden="true"></span>
+            <div class="screen-tilt">
+              <div class="screen-frame">
+                <div class="screen-chrome" aria-hidden="true">
+                  <span class="screen-dots"><i></i><i></i><i></i></span>
+                  <span class="screen-address mono">SCA GMS <b>/</b> dashboard</span>
+                  <span class="screen-live"><i></i> تفاعلي</span>
+                </div>
+                <div class="screen-viewport" data-mockup-stage>
+                  <iframe
+                    id="mockupFrame"
+                    src="mockups/sca-dashboard.html"
+                    title="واجهة SCA GMS التفاعلية — لوحة المتابعة"
+                    loading="eager"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <figcaption class="screen-caption">
+              <span class="mono">01</span>
+              <span>لوحة المتابعة <i aria-hidden="true"></i> تفاعلية · بيانات تجريبية</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section offline-section light-section" id="offline">
+      <div class="offline-copy reveal">
+        <p class="section-label">النسخة المكتبية</p>
+        <h2>شغّل النظام.<br /><span class="title-accent">أغلق الإنترنت.</span></h2>
+        <p class="section-lead">
+          ثبّت النسخة المكتبية مرة واحدة على جهازك. بعد التثبيت يعمل النظام
+          بالكامل دون إنترنت: الخادم والواجهة وقاعدة البيانات كلها محلية.
+        </p>
+        <ul class="check-list">
+          <li><span class="check-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6" /></svg></span><span><strong>تثبيت على ويندوز</strong><small>مثبّت واحد، ثم تشغيل من قائمة ابدأ.</small></span></li>
+          <li><span class="check-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6" /></svg></span><span><strong>نسخ احتياطي تلقائي</strong><small>كل 30 دقيقة افتراضيًا، دون أن تلمس شيئًا.</small></span></li>
+          <li><span class="check-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6" /></svg></span><span><strong>تشغيل مع ويندوز</strong><small>مفتاح واحد في الإعدادات، ويبدأ مع الجهاز.</small></span></li>
+          <li><span class="check-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6" /></svg></span><span><strong>بيانات في ملف واحد</strong><small>SQLite واحد يسهل نسخه ونقله والاحتفاظ به.</small></span></li>
+        </ul>
+        <div class="offline-note"><span class="mono">INSTALLER</span> Windows 10/11 · 64-bit · تثبيت رسمي</div>
+      </div>
+
+      <div class="offline-visual reveal" style="--delay: 140ms">
+        <div class="offline-stage">
+          <span class="offline-glow" aria-hidden="true"></span>
+          <span class="offline-orbit offline-orbit-one" aria-hidden="true"></span>
+          <span class="offline-orbit offline-orbit-two" aria-hidden="true"></span>
+
+          <div class="desktop-window">
+            <div class="window-bar">
+              <span class="window-title">
+                <span class="window-mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" /><path d="M2 12h20M6 16h.01M10 16h.01" /></svg>
+                </span>
+                SCA_GMS
+              </span>
+              <span class="window-controls" aria-hidden="true"><i></i><i></i><i></i></span>
+            </div>
+            <div class="window-body">
+              <div class="window-banner">
+                <div class="window-banner-copy">
+                  <span class="window-banner-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5v14a9 3 0 0 0 18 0V5" /><path d="M3 12a9 3 0 0 0 18 0" /></svg>
+                  </span>
+                  <span><strong>SCA_GMS_<span data-version data-version-format="plain">0.0.1</span></strong><small>مثبّت ويندوز · جاهز للتثبيت</small></span>
+                </div>
+                <span class="window-pill"><i aria-hidden="true"></i> LOCAL</span>
+              </div>
+              <div class="file-row is-primary">
+                <span class="file-icon exe">EXE</span>
+                <span class="file-name">start.exe</span>
+                <span class="file-meta">ابدأ النظام</span>
+              </div>
+              <div class="file-row">
+                <span class="file-icon db">DB</span>
+                <span class="file-name">data / sca_gms.db</span>
+                <span class="file-meta">قاعدة البيانات</span>
+              </div>
+              <div class="file-row">
+                <span class="file-icon folder">DIR</span>
+                <span class="file-name">backups /</span>
+                <span class="file-meta">نسخ احتياطية</span>
+              </div>
+              <div class="file-row">
+                <span class="file-icon folder">DIR</span>
+                <span class="file-name">logs /</span>
+                <span class="file-meta">التشخيص</span>
+              </div>
+              <div class="window-status"><span><i aria-hidden="true"></i> جاهز للعمل دون إنترنت</span><span class="mono">DESKTOP</span></div>
+            </div>
+          </div>
+
+          <div class="offline-float offline-float-wifi" title="دون إنترنت" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m2 2 20 20" /><path d="M8.5 16.5a5 5 0 0 1 7 0" /><path d="M2 8.82a15 15 0 0 1 4.17-2.65" /><path d="M10.66 5c4.01-.36 8.14.9 11.34 3.76" /><path d="M16.85 11.25a10 10 0 0 1 2.22 1.68" /><path d="M5 12.55a11 11 0 0 1 5.08-2.54" /></svg>
+          </div>
+
+          <div class="offline-float offline-float-db" title="SQLite — ملف واحد" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5v14a9 3 0 0 0 18 0V5" /><path d="M3 12a9 3 0 0 0 18 0" /></svg>
+          </div>
+
+          <div class="offline-float offline-float-refresh" title="نسخ احتياطي تلقائي" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16" /><path d="M3 21v-5h5M3 12a9 9 0 0 1 15.5-6.2L21 8" /><path d="M21 3v5h-5" /></svg>
+          </div>
+
+          <div class="offline-status">
+            <div class="offline-status-head">
+              <span class="offline-status-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg>
+              </span>
+              <span>حالة التشغيل</span>
+              <span class="offline-status-pill">LOCAL</span>
+            </div>
+            <div class="offline-status-row"><span>الاتصال</span><strong>غير مطلوب</strong></div>
+            <div class="offline-status-row"><span>قاعدة البيانات</span><strong>SQLite</strong></div>
+            <div class="offline-status-row"><span>النسخ الاحتياطي</span><strong>تلقائي</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust-section light-section" id="trust">
+      <div class="trust-intro reveal">
+        <p class="section-label">الأمان والحوكمة</p>
+        <h2>بياناتك تبقى<br /><span class="title-accent">داخل المبنى.</span></h2>
+        <p class="section-lead">
+          لا سحابة، لا نسخ خارجية، ولا وصول من طرف ثالث. النظام مصمم لبيئة عمل
+          محلية، وكل خطوة قابلة للتتبع.
+        </p>
+        <div class="trust-emblem" aria-hidden="true">
+          <span class="trust-emblem-core">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg>
+          </span>
+          <span class="trust-emblem-orbit">
+            <span class="trust-node trust-node-lock">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="16" r="1" /><rect x="3" y="10" width="18" height="12" rx="2" /><path d="M7 10V7a5 5 0 0 1 10 0v3" /></svg>
+            </span>
+            <span class="trust-node trust-node-cloud">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m2 2 20 20" /><path d="M5.782 5.782A7 7 0 0 0 9 19h8.5a4.5 4.5 0 0 0 1.307-.193" /><path d="M21.532 16.5A4.5 4.5 0 0 0 17.5 10h-1.79A7.008 7.008 0 0 0 10 5.07" /></svg>
+            </span>
+            <span class="trust-node trust-node-db">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5V19A9 3 0 0 0 21 19V5" /><path d="M3 12A9 3 0 0 0 21 12" /></svg>
+            </span>
+            <span class="trust-node trust-node-file">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 22h2a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3" /><path d="M14 2v4a2 2 0 0 0 2 2h4" /><circle cx="8" cy="16" r="6" /><path d="M9.5 17.4 8 16v-3.4" /></svg>
+            </span>
+          </span>
+          <span class="trust-emblem-label mono">LOCAL ONLY</span>
+        </div>
+      </div>
+
+      <div class="trust-list reveal" style="--delay: 120ms">
+        <article class="trust-item">
+          <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2" /><line x1="2" x2="22" y1="10" y2="10" /></svg></span>
+          <div><h3>كروت مشفّرة</h3><p>أرقام الكروت وسرها تُحفظ مشفّرة، والقراءة تمر عبر مسار واحد محكوم.</p></div>
+        </article>
+        <article class="trust-item">
+          <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /><path d="M12 7v5l4 2" /></svg></span>
+          <div><h3>كل تغيير مسجّل</h3><p>سجل تغييرات وتراجع يعيد الصفوف المحذوفة بدل أن يترك أثرًا مفقودًا.</p></div>
+        </article>
+        <article class="trust-item">
+          <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z" /><circle cx="16.5" cy="7.5" r=".5" fill="currentColor" /></svg></span>
+          <div><h3>جلسات محمية</h3><p>دخول بـ JWT وصلاحيات، وكل محاولة دخول تُسجَّل وتُراقب.</p></div>
+        </article>
+        <article class="trust-item">
+          <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5V19A9 3 0 0 0 21 19V5" /><path d="M3 12A9 3 0 0 0 21 12" /></svg></span>
+          <div><h3>نسخ بلا توقف</h3><p>نسخة احتياطية تلقائية، واستعادة بخطوة واحدة عند الحاجة.</p></div>
+        </article>
+        <article class="trust-item">
+          <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m2 2 20 20" /><path d="M5.782 5.782A7 7 0 0 0 9 19h8.5a4.5 4.5 0 0 0 1.307-.193" /><path d="M21.532 16.5A4.5 4.5 0 0 0 17.5 10h-1.79A7.008 7.008 0 0 0 10 5.07" /></svg></span>
+          <div><h3>بلا خادم خارجي</h3><p>لا سحابة ولا اتصال خارجي؛ كل شيء يجري داخل الشبكة المحلية.</p></div>
+        </article>
+        <article class="trust-item">
+          <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="m16 11 2 2 4-4" /></svg></span>
+          <div><h3>صلاحيات دقيقة</h3><p>أدوار وصول محددة لكل مستخدم، وما لا يُصرَّح به لا يظهر.</p></div>
+        </article>
+        <p class="trust-footline"><span aria-hidden="true">✦</span> لا شيء يغادر الجهاز. لا اشتراك. لا خادم خارجي.</p>
+      </div>
+    </section>
+
+    <section class="section faq-section light-section" id="faq">
+      <div class="faq-head reveal">
+        <p class="section-label">قبل التنزيل</p>
+        <h2>أسئلة تسبق<br /><span class="title-accent">الرحلة.</span></h2>
+        <p class="section-lead">كل ما تحتاج معرفته قبل أن تُثبّت النظام على جهازك.</p>
+      </div>
+      <div class="faq-list reveal" style="--delay: 100ms">
+        <details open>
+          <summary><span>كيف أثبّت النظام؟</span><i aria-hidden="true"></i></summary>
+          <p>نزّل ملف التثبيت من هذه الصفحة، شغّله، واتبع الخطوات. بعد اكتمال التثبيت افتح النظام من قائمة ابدأ — لا تحتاج إلى إعدادات إضافية.</p>
+        </details>
+        <details>
+          <summary><span>هل يعمل دون إنترنت؟</span><i aria-hidden="true"></i></summary>
+          <p>نعم، بعد التثبيت. الواجهة والخادم وقاعدة البيانات كلها محلية، ولا يحتاج النظام اتصالًا بالشبكة للعمل.</p>
+        </details>
+        <details>
+          <summary><span>أين تُحفظ البيانات؟</span><i aria-hidden="true"></i></summary>
+          <p>في <code>data/sca_gms.db</code> داخل مجلد النظام، ونسخ احتياطية في <code>backups/</code>. انسخ هذين المجلدين عند الانتقال إلى نسخة جديدة.</p>
+        </details>
+        <details>
+          <summary><span>ما متطلبات التشغيل؟</span><i aria-hidden="true"></i></summary>
+          <p>Windows 10 أو 11 بنسخة 64-bit. مثبّت النظام يجهّز المكونات المطلوبة تلقائيًا.</p>
+        </details>
+        <details>
+          <summary><span>كيف أنقل بياناتي إلى جهاز آخر؟</span><i aria-hidden="true"></i></summary>
+          <p>أغلق النظام، ثم انسخ مجلدَي <code>data</code> و<code>backups</code> إلى النسخة الجديدة قبل تشغيلها. لا تنسخ مجلدات التشغيل أو السجلات.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="download-section" id="download">
+      <div class="download-bg" aria-hidden="true"></div>
+      <div class="download-overlay" aria-hidden="true"></div>
+      <div class="download-inner">
+        <p class="section-label">النسخة <span data-version data-version-format="plain">0.0.1</span></p>
+        <h2>جاهز للإبحار.</h2>
+        <p class="download-lead">ثبّت النظام على جهاز المكتب. نزّل الملف، شغّله، واتبع خطوات التثبيت.</p>
+        <a class="btn btn-primary btn-large download-button" href="download/SCA_GMS_Setup_0.0.1.exe" download data-download>
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+            <path d="M3 4.7 10.6 3.6v7.2H3V4.7Zm8.6-1.2L21.7 2v8.8H11.6V3.5ZM3 12h7.6v7.2L3 18.1V12Zm8.6 0h10.1v8.8l-10.1-1.3V12Z" />
+          </svg>
+          <span>حمّل نسخة ويندوز</span>
+          <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6" /></svg>
+        </a>
+        <p class="download-meta"><span>Windows 10/11</span><i aria-hidden="true"></i><span>64-bit</span><i aria-hidden="true"></i><span>مثبّت ويندوز</span></p>
+        <p class="download-note">تنزيل مباشر: <span class="mono" data-download-filename>SCA_GMS_Setup_0.0.1.exe</span></p>
+        <div class="download-coords mono" aria-hidden="true">SUEZ CANAL · PORT TEWFIK · 29°57′N 32°34′E</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="SCA GMS — العودة إلى البداية">
+          <img class="brand-mark" src="assets/favicon/favicon-96x96.png" alt="" width="46" height="46" />
+          <span class="brand-text"><strong>SCA GMS</strong><span>نظام إدارة النقل والوقود</span></span>
+        </a>
+        <p>هيئة قناة السويس · إدارة الخدمات<br />قسم نقل بورتوفيق — السويس</p>
+      </div>
+      <nav class="footer-nav" aria-label="روابط التذييل">
+        <a href="#control">النظام</a>
+        <a href="#offline">النسخة المكتبية</a>
+        <a href="#trust">الأمان</a>
+        <a href="#faq">الأسئلة</a>
+        <a href="#download">التنزيل</a>
+      </nav>
+      <div class="footer-meta">
+        <span class="footer-badge"><i aria-hidden="true"></i> LOCAL-FIRST</span>
+        <p>صُمّم ليعمل بلا إنترنت.<br />© 2026 SCA GMS</p>
+        <a class="back-top" href="#top">إلى الأعلى <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <noscript>
+    <style>
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .title-line > span { transform: none !important; }
+    </style>
+  </noscript>
+  <script src="js/landing/nav.js"></script>
+  <script src="js/landing/hero.js"></script>
+  <script src="js/landing/reveal.js"></script>
+  <script src="js/landing/mockup.js"></script>
+  <script src="js/landing/version.js"></script>
+</body>
+</html>
