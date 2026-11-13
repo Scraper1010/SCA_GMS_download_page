@@ -1,7 +1,7 @@
 {
-  "version": "0.0.12",
+  "version": "0.0.13",
   "downloadFile": "SCA_GMS_Setup_{version}.exe",
   "releasedAt": "2026-11-13",
   "sizeBytes": 4224000,
-  "sha256": "1a347a8116a9de54e5f427db7cbe1a1b95f0e2a5af7714e1190dac151020580d"
+  "sha256": "a95d267abb3c472a25da36ed20cf049922b8a30147b79b74d5b0ed920933bb83"
 }
